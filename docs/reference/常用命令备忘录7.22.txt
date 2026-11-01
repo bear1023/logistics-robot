@@ -1,0 +1,16 @@
+set_zhuashou_Angle(107,40.0); //抓取物块
+set_zhuashou_Angle(133,40.0); //放置物块（但是不打到别的物块）
+set_zhuashou_Angle(190,40.0);//抓手张开，防止影响摄像头工作
+
+set_yuantai_Angle(138,40.0);  //物块平台拿放物块
+set_yuantai_Angle(241.3,40.0);  //地面拿放
+
+set_wukuaipingtai_Angle(10.5+90+90,40.0);//物块平台准备放置第一个物块
+set_wukuaipingtai_Angle(10.5+90,40.0);//物块平台准备放置第二个物块
+set_wukuaipingtai_Angle(10.5,40.0);//物块平台准备放置第三个物块
+
+mypid.integral = 0;PID_move(0,0,0,1000,-90,0);//在原地旋转
+PID_move(0,0,0,500,-90,3);
+
+car_move1(0,-1000+90,150,200);
+car_move2(-30,0,100,100);

@@ -1,0 +1,36 @@
+基本移动函数：
+void car_move2(float x,float y,int a_in,int car_speed)
+说明：实现左右方向的移动； 如果x>0 小车左移
+相匹配的函数：void car_move4(float x,float y,int a_in,int car_speed) //仅仅移动，不延时 
+/*	
+	float x ：移动的距离（x轴）左右移动的距离
+	float y ：移动的距离（y轴）一般直接给0
+	int a_in : 移动的加速度    可取的范围 150rpm/s到200rpm/s
+	int car_speed : 移动的速度  可取的范围 150rpm 到 200rpm
+*/
+
+void car_move1(float x,float y,int a_in,int car_speed)
+说明：实现前后方向的移动； 如果y>0 小车前进
+相匹配的函数：void car_move3(float x,float y,int a_in,int car_speed) //仅仅移动，不延时 
+/*	
+	float x ：移动的距离（x轴）一般直接给0
+	float y ：移动的距离（y轴）前后移动的距离
+	int a_in : 移动的加速度    可取的范围 150rpm/s到200rpm/s
+	int car_speed : 移动的速度  可取的范围 150rpm 到 200rpm
+*/
+
+
+int move_all(float target_pos, uint16_t speed, uint8_t accel,float target_pos1, uint16_t speed1, uint8_t accel1,float target, float speed_of_yuntai)
+/*前三个参数分别为
+	平推的目标位置：65.0f 到 -122.0 之间
+	平推的速度： 1000 rpm
+	平推的加速度：230rpm/s 默认值
+  中间三个参数分别为
+	升降的目标位置：0.0f 到 130.0f
+	升降的速度：1000 rpm
+	升降的加速度：200 rpm
+  最后两个参数分别为
+	云台的目标位置：0 到 360
+	云台的转速：13左右
+
+*/
