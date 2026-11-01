@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+# 嵌入式工程里的换行敏感文件保持原样
+*.s           text eol=crlf
+*.uvprojx     text eol=crlf
+*.uvoptx      text eol=crlf
+*.ioc         text eol=crlf
+
+*.pdf         binary
+*.7z          binary
+*.zip         binary
+*.plecs       binary
+*.stl         binary
+*.png         binary
+*.jpg         binary
+*.gbr         binary
+*.kicad_pcb   binary
+*.kicad_sch   binary

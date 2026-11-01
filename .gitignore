@@ -1,0 +1,45 @@
+# ---- Keil 构建产物 ----
+OBJ/
+Objects/
+Listings/
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.hex
+*.bin
+*.map
+*.lnp
+*.sct
+*.htm
+*.lst
+*.uvguix.*
+*.uvopt.bak
+JLinkSettings.ini
+EventRecorderStub.scvd
+RTE/
+
+# ---- ST 标准库 / CMSIS（体积大，按需自行补齐） ----
+FWLIB/
+CORE/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- 采集/调试产物 ----
+*.avi
+*.mp4
+captures/
+debug_*.png
+
+# ---- 压缩包 / 系统垃圾 ----
+*.zip
+*.rar
+*.7z
+Thumbs.db
+desktop.ini
+.DS_Store
